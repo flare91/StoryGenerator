@@ -1,0 +1,34 @@
+<!--
+This template loads for the 'tab.friend-detail' state (app.js)
+'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+The FriendsCtrl pulls data from the Friends service (service.js)
+The Friends service returns an array of friend data
+-->
+<ion-view view-title="Choose Your Words">
+  <ion-content class="padding">
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="Adjective">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="A Name">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Noun"></input>
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Adjective"></input>
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Verb"></input>
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Adverb"></input>
+      </label>
+    </div>
+    <button ng-controller="PopupCtrl" class="button button-block button-positive" ng-click="showConfirm()">
+      Let's Go!
+    </button>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,10 @@
+<ion-view view-title="Choose A Story">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-avatar" ng-repeat="story in stories" type="item-text-wrap" href="#/tab/friend/{{story.id}}">
+        <img ng-src="{{story.face}}">
+        <h2>{{story.name}}</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
